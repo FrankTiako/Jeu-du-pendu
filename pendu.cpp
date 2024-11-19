@@ -136,7 +136,7 @@ int main(int argc, char**argv){
         std::cout << v;
         
         if(gagne(tab,esp)){
-            std::cout << "Vous avez gagne";
+            std::cout << "Vous avez gagne" << std::endl;
             std::cout << "reessayer ?oui(1) / non (0)" << std::endl;
             std::cin >> play;
             if(play == 1){
@@ -186,7 +186,6 @@ int main(int argc, char**argv){
                 play = true;
                 found = false;
                 r = rand() % 10 ;
-                std::cout << r;
                 devine_mot(mots,r,letter);
                 tentatives = 4;
             }
